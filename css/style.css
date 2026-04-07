@@ -1,0 +1,116 @@
+* {
+    /* color */
+    --color-primary: rgb(255, 255, 255);
+    --color-secondary: rgb(1, 146, 245);
+    --color-text-primary: rgb(0, 0, 0);
+    /* fonts */
+    --font-family-primary: "Poppins", sans-serif;
+    --font-family-secondary: "DM Serif Display", serif;
+}
+
+body {
+    margin: auto;
+    color: var(--color-text-primary);
+    font-family: var(--font-family-primary);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1440px;
+}
+
+/* logo */
+.logo {
+    display: inline-block;
+    padding-right: 40px;
+}
+
+.logo__text {
+    font-family: var(--font-family-secondary);
+    color: var(--color-secondary);
+    line-height: 1.5;
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    position: relative;
+}
+
+.logo__text::before {
+    content: "Apparel";
+    color: inherit;
+    background-color: var(--color-primary);
+    font-size: 18px;
+    bottom: -10px;
+    right: -40px;
+    position: absolute;
+    line-height: 1;
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto 58px;
+    max-width: 1240px;
+}
+
+/* header__nav */
+.header__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+
+.header__link {
+    color: var(--color-text-primary);
+    font-family: var(--font-family-primary);
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+    transition: all 0.2s linear;
+}
+
+.header__link::before {
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: var(--color-secondary);
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    transition: width 0.2s linear;
+}
+
+.header__link:hover::before {
+    width: 100%;
+}
+
+.header__link:hover {
+    color: var(--color-secondary);
+}
+
+/* header__btn */
+.header__btn {
+    color: var(--color-primary);
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--color-secondary);
+    transition: all 0.2s linear;
+}
+
+.header__btn:hover {
+    opacity: 0.8;
+}
+
+/* footer */
