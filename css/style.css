@@ -2,6 +2,7 @@
     /* color */
     --color-primary: rgb(255, 255, 255);
     --color-secondary: rgb(1, 146, 245);
+    --color-dark1: rgba(129, 135, 157, 1);
     --color-text-primary: rgb(0, 0, 0);
     /* fonts */
     --font-family-primary: "Poppins", sans-serif;
@@ -20,7 +21,13 @@ a {
 
 .container {
     max-width: 1440px;
+    margin: 0 auto;
 }
+
+.wrapper {
+    margin: 0 auto;
+}
+
 
 /* logo */
 .logo {
@@ -114,3 +121,102 @@ a {
 }
 
 /* footer */
+.footer {
+    color: var(--color-dark1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 58px;
+    width: 1240px;
+}
+
+.footer__top {
+    width: 100%;
+    padding-bottom: 34px;
+    border-bottom: 1px solid var(--color-dark1);
+}
+
+.footer__bottom {
+    margin: 20px auto;
+}
+
+.footer__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+}
+
+.footer__item {
+    list-style: none;
+}
+
+.footer__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 6px;
+}
+
+.footer__desc {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+
+}
+
+.footer__title {
+    line-height: 1.25;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.footer__link {
+    color: var(--color-dark1);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    transition: all 0.2s linear;
+}
+
+.footer__link:hover {
+    color: var(--color-secondary);
+    opacity: 0.8;
+}
+
+.footer__bottom p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer__info {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 6px;
+}
+
+/* icon */
+.social-icon {
+    height: 24px;
+    width: 24px;
+    object-fit: cover;
+}
+
+svg {
+    height: 24px;
+    width: 24px;
+    object-fit: cover;
+}
