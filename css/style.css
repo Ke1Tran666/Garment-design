@@ -170,11 +170,22 @@ a {
     border: 2px solid var(--color-secondary);
     font-weight: 400;
     font-size: 16px;
+    transition: all 0.2s linear;
+}
+
+.hero__btn:hover {
+    opacity: 0.8;
 }
 
 .opposite {
     background-color: inherit;
     color: var(--color-secondary);
+}
+
+.opposite:hover {
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    opacity: 0.2;
 }
 
 .hero__images {
@@ -210,6 +221,98 @@ a {
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+/* services */
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1170px;
+    margin: 0 auto 90px;
+}
+
+.services__top {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.services__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    max-width: 758px;
+}
+
+.services__text {
+    max-width: 596px;
+    color: var(--color-dark1);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.services__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    column-gap: 70px;
+    row-gap: 50px;
+    border-radius: 0;
+    padding: 0;
+}
+
+.services__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+}
+
+.services__cardIcon {
+    background-color: rgba(1, 146, 245, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    padding: 12px;
+    color: var(--color-secondary);
+}
+
+.services__cardIcon svg {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+}
+
+.services__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.services__cardTitle {
+    line-height: 1.2;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.services__cardText {
+    color: var(--color-dark1);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
 }
 
 /* footer */
