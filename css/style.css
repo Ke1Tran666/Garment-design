@@ -15,6 +15,19 @@ body {
     font-family: var(--font-family-primary);
 }
 
+/* text */
+.text-h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.text-p1 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
 a {
     text-decoration: none;
 }
@@ -47,7 +60,7 @@ a {
 }
 
 .logo__text::before {
-    content: "Apparel";
+    content: "MayMac";
     color: inherit;
     background-color: var(--color-primary);
     font-size: 18px;
@@ -223,8 +236,9 @@ a {
     display: block;
 }
 
-/* services */
-.services {
+/* Interior layout */
+
+.interior {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -233,7 +247,7 @@ a {
     margin: 0 auto 90px;
 }
 
-.services__top {
+.interior__layout-top {
     text-align: center;
     display: flex;
     align-items: center;
@@ -242,20 +256,16 @@ a {
     gap: 30px;
 }
 
-.services__title {
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 1.2;
+.interior__layout-title {
     max-width: 758px;
 }
 
-.services__text {
+.interior__layout-text {
     max-width: 596px;
     color: var(--color-dark1);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.4;
 }
+
+/* services */
 
 .services__cards {
     display: grid;
@@ -313,6 +323,60 @@ a {
     font-size: 16px;
     line-height: 1;
     text-align: center;
+}
+
+/* gallery */
+/* .gallery__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+
+    grid-auto-rows: 200px;
+} */
+
+.gallery__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "a b c"
+        "a d c"
+        "e d f";
+    gap: 16px;
+}
+
+.a {
+    grid-area: a;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
+
+.d {
+    grid-area: d;
+}
+
+.e {
+    grid-area: e;
+}
+
+.f {
+    grid-area: f;
+}
+
+.gallery__card {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.gallery__card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* footer */
