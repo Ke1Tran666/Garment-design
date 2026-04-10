@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garment design</title>
-    <!-- fonts -->
+    <title>Garment Design</title>
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Sora:wght@100..800&display=swap"
         rel="stylesheet">
-
-    <!-- css -->
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -21,300 +19,254 @@
 <body>
     <div class="container">
         <div class="wrapper">
+
+            <!-- ========== HEADER ========== -->
             <header class="header">
-                <div class="logo">
-                    <div class="logo__text">HoaTran</div>
-                </div>
-                <nav class="header__nav">
+                <a href="#" class="logo" aria-label="HoaTran - Trang chủ">
+                    <span class="logo__text">HoaTran</span>
+                </a>
+                <nav class="header__nav" aria-label="Menu chính">
                     <ul class="header__menu">
-                        <li class="header__item">
-                            <a href="" class="header__link" title="Home">Trang chủ</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="" class="header__link" title="Services">Dịch vụ</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="" class="header__link" title="About Us">Về chúng tôi</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="" class="header__link" title="Contact">Liên hệ</a>
-                        </li>
+                        <li><a href="#" class="header__link" title="Home">Trang chủ</a></li>
+                        <li><a href="#services" class="header__link" title="Services">Dịch vụ</a></li>
+                        <li><a href="#" class="header__link" title="About Us">Về chúng tôi</a></li>
+                        <li><a href="#contact" class="header__link" title="Contact">Liên hệ</a></li>
                     </ul>
                 </nav>
                 <button class="header__btn">Nhận báo giá</button>
             </header>
+
             <main>
+
+                <!-- ========== HERO ========== -->
                 <section class="hero">
                     <div class="hero__content">
                         <h1 class="hero__title">
-                            Reliable Garments Accessories & Printing Solutions.
+                            Cung cấp các giải pháp và thiết kế may mặc đáng tin cậy.
                         </h1>
                         <p class="hero__text">
-                            Manufacturer & supplier of high quality garments accessories, printing, and packaging
-                            solutions - trusted by the apparel industry.
+                            Dịch vụ thiết kế và in ấn trang phục chất lượng cao nhất - Giải pháp được ngành công nghiệp
+                            may mặc tin dùng.
                         </p>
                         <div class="hero__btns">
-                            <button class="hero__btn">
-                                Contact Us Now
-                            </button>
-                            <button class="hero__btn opposite">
-                                View Our Services
-                            </button>
+                            <button class="btn hero__btn">Liên hệ ngay</button>
+                            <button class="btn btn--outline hero__btn">Dịch vụ của chúng tôi</button>
                         </div>
                     </div>
                     <div class="hero__images">
-                        <img src="./assets/Images/premium_photo-1682142705901-28c534528ce8.png" alt="illustration"
+                        <img src="./assets/Images/premium_photo-1682142705901-28c534528ce8.png" alt="Hình minh hoạ 1"
                             class="hero__image small">
-                        <img src="./assets/Images/photo-1580644228275-2b826dbec5bf.png" alt="illustration"
+                        <img src="./assets/Images/photo-1580644228275-2b826dbec5bf.png" alt="Hình minh hoạ 2"
                             class="hero__image small">
-                        <img src="./assets/Images/photo-1562157873-818bc0726f68.png" alt="illustration"
+                        <img src="./assets/Images/photo-1562157873-818bc0726f68.png" alt="Hình minh hoạ 3"
                             class="hero__image large">
                     </div>
                 </section>
-                <section class="services interior">
-                    <div class="services__top interior__layout-top">
-                        <h2 class="interior__layout-title text-h2">
-                            Our Services
-                        </h2>
+
+                <!-- ========== SERVICES ========== -->
+                <section id="services" class="services interior">
+                    <div class="interior__layout-top">
+                        <h2 class="interior__layout-title text-h2">Dịch vụ của chúng tôi</h2>
                         <p class="interior__layout-text text-p1">
-                            We provide complete garments accessories and printing solutions under one roof.
+                            Chúng tôi cung cấp đầy đủ các giải pháp thiết kế trang phục để đáp ứng nhu cầu cụ thể của
+                            bạn.
                         </p>
                     </div>
+
                     <div class="services__cards">
+
+                        <!-- Card 1 -->
                         <div class="services__card">
-                            <div class="services__cardIcon">
+                            <div class="icon-circle services__cardIcon">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 0 1-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0 0 21 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 0 0-1.913-.247M6.34 18H5.25A2.25 2.25 0 0 1 3 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 0 1 1.913-.247m10.5 0a48.536 48.536 0 0 0-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5Zm-3 0h.008v.008H15V10.5Z" />
                                 </svg>
                             </div>
                             <div class="services__content">
-                                <h3 class="services__cardTitle">
-                                    Offset Printing
-                                </h3>
-                                <span class="services__cardText">
-                                    High-quality offset printing with precision and consistency.
-                                </span>
+                                <h3 class="services__cardTitle">In Sơ đồ</h3>
+                                <p class="services__cardText">In sơ đồ chất lượng tốt nhất với độ chính xác và tính nhất
+                                    quán.</p>
                             </div>
                         </div>
+
+                        <!-- Card 2 -->
                         <div class="services__card">
-                            <div class="services__cardIcon">
+                            <div class="icon-circle services__cardIcon">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 0 1-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0 0 21 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 0 0-1.913-.247M6.34 18H5.25A2.25 2.25 0 0 1 3 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 0 1 1.913-.247m10.5 0a48.536 48.536 0 0 0-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5Zm-3 0h.008v.008H15V10.5Z" />
                                 </svg>
                             </div>
                             <div class="services__content">
-                                <h3 class="services__cardTitle">
-                                    Offset Printing
-                                </h3>
-                                <span class="services__cardText">
-                                    High-quality offset printing with precision and consistency.
-                                </span>
+                                <h3 class="services__cardTitle">In rập</h3>
+                                <p class="services__cardText">In rập với chi tiết có thể tái sử dụng với độ chính xác
+                                    chất lượng.</p>
                             </div>
                         </div>
+
+                        <!-- Card 3 -->
                         <div class="services__card">
-                            <div class="services__cardIcon">
+                            <div class="icon-circle services__cardIcon">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 0 1-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0 0 21 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 0 0-1.913-.247M6.34 18H5.25A2.25 2.25 0 0 1 3 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 0 1 1.913-.247m10.5 0a48.536 48.536 0 0 0-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5Zm-3 0h.008v.008H15V10.5Z" />
+                                        d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
                                 </svg>
                             </div>
                             <div class="services__content">
-                                <h3 class="services__cardTitle">
-                                    Offset Printing
-                                </h3>
-                                <span class="services__cardText">
-                                    High-quality offset printing with precision and consistency.
-                                </span>
+                                <h3 class="services__cardTitle">Thiết kế</h3>
+                                <p class="services__cardText">Thiết kế may mặc với nhiều mẫu mã, tăng size theo yêu cầu.
+                                </p>
                             </div>
                         </div>
+
+                        <!-- Card 4 -->
                         <div class="services__card">
-                            <div class="services__cardIcon">
+                            <div class="icon-circle services__cardIcon">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 0 1-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0 0 21 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 0 0-1.913-.247M6.34 18H5.25A2.25 2.25 0 0 1 3 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 0 1 1.913-.247m10.5 0a48.536 48.536 0 0 0-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5Zm-3 0h.008v.008H15V10.5Z" />
+                                        d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" />
                                 </svg>
                             </div>
                             <div class="services__content">
-                                <h3 class="services__cardTitle">
-                                    Offset Printing
-                                </h3>
-                                <span class="services__cardText">
-                                    High-quality offset printing with precision and consistency.
-                                </span>
+                                <h3 class="services__cardTitle">Tính định mức</h3>
+                                <p class="services__cardText">Tối ưu nguyên phụ liệu đến mức tốt nhất.</p>
                             </div>
                         </div>
-                        <div class="services__card">
-                            <div class="services__cardIcon">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 0 1-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0 0 21 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 0 0-1.913-.247M6.34 18H5.25A2.25 2.25 0 0 1 3 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 0 1 1.913-.247m10.5 0a48.536 48.536 0 0 0-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5Zm-3 0h.008v.008H15V10.5Z" />
-                                </svg>
-                            </div>
-                            <div class="services__content">
-                                <h3 class="services__cardTitle">
-                                    Offset Printing
-                                </h3>
-                                <span class="services__cardText">
-                                    High-quality offset printing with precision and consistency.
-                                </span>
-                            </div>
-                        </div>
-                        <div class="services__card">
-                            <div class="services__cardIcon">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 0 1-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0 0 21 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 0 0-1.913-.247M6.34 18H5.25A2.25 2.25 0 0 1 3 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 0 1 1.913-.247m10.5 0a48.536 48.536 0 0 0-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5Zm-3 0h.008v.008H15V10.5Z" />
-                                </svg>
-                            </div>
-                            <div class="services__content">
-                                <h3 class="services__cardTitle">
-                                    Offset Printing
-                                </h3>
-                                <span class="services__cardText">
-                                    High-quality offset printing with precision and consistency.
-                                </span>
-                            </div>
-                        </div>
+
                     </div>
                 </section>
+
+                <!-- ========== GALLERY ========== -->
                 <section class="gallery interior">
                     <div class="interior__layout-top">
-                        <h2 class="interior__layout-title text-h2">
-                            Our Gallery
-                        </h2>
+                        <h2 class="interior__layout-title text-h2">Sản phẩm của chúng tôi</h2>
                         <p class="interior__layout-text text-p1">
-                            Showcasing our garments accessories, printing, and manufacturing work.
+                            Trưng bày các sản phẩm thiết kế, sơ đồ, dịch vụ in ấn của chúng tôi.
                         </p>
                     </div>
                     <div class="gallery__cards">
-                        <div class="gallery__card a">
-                            <img src="./assets/Images/Pictures/photo-1759579470279-0a647e2968b9.png" alt="pictures"
-                                class="gallery__picture">
+                        <div class="gallery__card a"><img
+                                src="./assets/Images/Pictures/photo-1759579470279-0a647e2968b9.png" alt="Sản phẩm 1">
                         </div>
-                        <div class="gallery__card b">
-                            <img src="./assets/Images/Pictures/photo-1673201230274-c4dbd20c3f79.png" alt="pictures"
-                                class="gallery__picture">
+                        <div class="gallery__card b"><img
+                                src="./assets/Images/Pictures/photo-1673201230274-c4dbd20c3f79.png" alt="Sản phẩm 2">
                         </div>
-                        <div class="gallery__card c">
-                            <img src="./assets/Images/Pictures/premium_photo-1661727362609-fa15fc2e25d5.png"
-                                alt="pictures" class="gallery__picture">
+                        <div class="gallery__card c"><img
+                                src="./assets/Images/Pictures/premium_photo-1661727362609-fa15fc2e25d5.png"
+                                alt="Sản phẩm 3"></div>
+                        <div class="gallery__card d"><img
+                                src="./assets/Images/Pictures/photo-1753164597585-6d42636ea099.png" alt="Sản phẩm 4">
                         </div>
-                        <div class="gallery__card d">
-                            <img src="./assets/Images/Pictures/photo-1753164597585-6d42636ea099.png" alt="pictures"
-                                class="gallery__picture">
+                        <div class="gallery__card e"><img
+                                src="./assets/Images/Pictures/photo-1743792931983-569266bb55d3.png" alt="Sản phẩm 5">
                         </div>
-                        <div class="gallery__card e">
-                            <img src="./assets/Images/Pictures/photo-1743792931983-569266bb55d3.png" alt="pictures"
-                                class="gallery__picture">
-                        </div>
-                        <div class="gallery__card f">
-                            <img src="./assets/Images/Pictures/premium_photo-1661963606252-c66607e5a12f.png"
-                                alt="pictures" class="gallery__picture">
-                        </div>
+                        <div class="gallery__card f"><img
+                                src="./assets/Images/Pictures/premium_photo-1661963606252-c66607e5a12f.png"
+                                alt="Sản phẩm 6"></div>
                     </div>
                 </section>
-                <section class="contact interior">
+
+                <!-- ========== CONTACT ========== -->
+                <section id="contact" class="contact interior">
                     <div class="interior__layout-top">
-                        <h2 class="interior__layout-title text-h2">
-                            Get in Touch With Us
-                        </h2>
+                        <h2 class="interior__layout-title text-h2">Liên hệ với chúng tôi</h2>
                         <p class="interior__layout-text text-p1">
-                            Tell us about your requirements. Our team will get back to you shortly.
+                            Hãy cho chúng tôi biết yêu cầu của bạn. Chúng tôi sẽ liên hệ lại với bạn trong thời gian
+                            ngắn nhất.
                         </p>
                     </div>
+
                     <div class="contact__content">
                         <div class="contact__info">
                             <div class="contact__infoTop">
-                                <h3 class="contact__title">
-                                    Reach Us Directly
-                                </h3>
-                                <p class="contact__text text-p2">
-                                    We reply within 24 hours.
-                                </p>
+                                <h3 class="contact__title">Liên hệ trực tiếp với chúng tôi</h3>
+                                <p class="contact__text text-p2">Chúng tôi sẽ trả lời trong vòng 24 giờ.</p>
                             </div>
                             <div class="contact__items">
+
+                                <!-- Địa chỉ -->
                                 <div class="contact__item">
-                                    <div class="contact__icon">
+                                    <div class="icon-circle contact__icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                                            stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                                             <path stroke-linecap="round" stroke-linejoin="round"
                                                 d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                                             <path stroke-linecap="round" stroke-linejoin="round"
                                                 d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
                                         </svg>
                                     </div>
-                                    <p class="contact__itemText text-p2">
-                                        113/54/29, Lâm Thị Hố, Khu Phố 51, Trung Mỹ Tây, TP. Hồ Chí Minh
-                                    </p>
+                                    <p class="contact__itemText text-p2">113/54/29, Lâm Thị Hố, Khu Phố 51, Trung Mỹ
+                                        Tây, TP. Hồ Chí Minh</p>
                                 </div>
+
+                                <!-- Điện thoại -->
                                 <div class="contact__item">
-                                    <div class="contact__icon">
+                                    <div class="icon-circle contact__icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                                            stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                                             <path stroke-linecap="round" stroke-linejoin="round"
                                                 d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                                         </svg>
                                     </div>
-                                    <p class="contact__itemText text-p2">
-                                        +84 0918414470
-                                    </p>
+                                    <p class="contact__itemText text-p2">+84 0918414470</p>
                                 </div>
+
+                                <!-- Email -->
                                 <div class="contact__item">
-                                    <div class="contact__icon">
+                                    <div class="icon-circle contact__icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                                            stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                                             <path stroke-linecap="round" stroke-linejoin="round"
                                                 d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                                         </svg>
                                     </div>
                                     <p class="contact__itemText text-p2">
-                                        liberal.fp@gmail.com
+                                        <a href="mailto:hoatran@example.com">hoatran@example.com</a>
                                     </p>
                                 </div>
+
                             </div>
                         </div>
+
+                        <!-- Form -->
                         <div class="contact__form">
-                            <form class="form">
-
+                            <form class="form" novalidate>
                                 <div class="form__group">
-                                    <input type="text" class="form__input" placeholder="Your Name">
+                                    <input type="text" class="form__input" placeholder="Họ và tên" autocomplete="name">
                                 </div>
-
                                 <div class="form__group">
-                                    <input type="email" class="form__input" placeholder="Your Email Address">
+                                    <input type="email" class="form__input" placeholder="Địa chỉ Email"
+                                        autocomplete="email">
                                 </div>
-
                                 <div class="form__group">
-                                    <input type="text" class="form__input" placeholder="Phone Number">
+                                    <input type="tel" class="form__input" placeholder="Số điện thoại"
+                                        autocomplete="tel">
                                 </div>
-
                                 <div class="form__group">
-                                    <select class="form__select">
-                                        <option>Dịch vụ quan tâm đến</option>
+                                    <select class="form__select" aria-label="Dịch vụ quan tâm">
+                                        <option value="">Dịch vụ quan tâm đến</option>
+                                        <option value="so-do">In Sơ đồ</option>
+                                        <option value="rap">In rập</option>
+                                        <option value="thiet-ke">Thiết kế</option>
+                                        <option value="dinh-muc">Tính định mức</option>
                                     </select>
                                 </div>
-
                                 <div class="form__group">
-                                    <textarea class="form__textarea" placeholder="Message..."></textarea>
+                                    <textarea class="form__textarea" placeholder="Nội dung..."></textarea>
                                 </div>
-
                                 <div class="form__checkbox">
                                     <input type="checkbox" id="terms">
                                     <label for="terms">Chấp nhận các điều khoản và điều kiện.</label>
                                 </div>
-
-                                <button class="form__submit text-sub">
-                                    <span>Submit</span>
+                                <button type="submit" class="form__submit text-sub">
+                                    <span>Gửi</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                                     </svg>
@@ -323,50 +275,48 @@
                         </div>
                     </div>
                 </section>
+
             </main>
+
+            <!-- ========== FOOTER ========== -->
             <footer class="footer">
                 <div class="footer__top">
                     <div class="footer__items">
-                        <div class="footer__item">
-                            <div class="logo">
-                                <div class="logo__text">HoaTran</div>
-                            </div>
-                            <p class="footer__desc">Chất lượng và sự tận tâm là ưu tiên hàng đầu của chúng tôi.</p>
 
+                        <!-- Brand -->
+                        <div class="footer__item">
+                            <a href="#" class="logo" aria-label="HoaTran - Trang chủ">
+                                <span class="logo__text">HoaTran</span>
+                            </a>
+                            <p class="footer__desc">Chất lượng và sự tận tâm là ưu tiên hàng đầu của chúng tôi.</p>
                             <div class="footer__social">
-                                <a href="#" class="footer__social-link">
+                                <a href="#" class="footer__social-link" aria-label="Facebook">
                                     <img class="social-icon" src="./assets/Images/Icons/icons8-facebook-48.png"
-                                        alt="icon facebook">
+                                        alt="Facebook">
                                 </a>
-                                <a href="#" class="footer__social-link">
-                                    <img class="social-icon" src="./assets/Images/Icons/icons8-zalo-48.png"
-                                        alt="Icon Zalo">
+                                <a href="#" class="footer__social-link" aria-label="Zalo">
+                                    <img class="social-icon" src="./assets/Images/Icons/icons8-zalo-48.png" alt="Zalo">
                                 </a>
                             </div>
                         </div>
+
+                        <!-- Quick links -->
                         <div class="footer__item">
                             <h3 class="footer__title">Liên kết nhanh</h3>
                             <ul class="footer__menu">
-                                <li class="footer__item">
-                                    <a href="#" class="footer__link" title="Home">Trang chủ</a>
-                                </li>
-                                <li class="footer__item">
-                                    <a href="#" class="footer__link" title="Services">Dịch vụ</a>
-                                </li>
-                                <li class="footer__item">
-                                    <a href="#" class="footer__link" title="About Us">Về chúng tôi</a>
-                                </li>
-                                <li class="footer__item">
-                                    <a href="#" class="footer__link" title="Contact">Liên hệ</a>
-                                </li>
+                                <li><a href="#" class="footer__link" title="Home">Trang chủ</a></li>
+                                <li><a href="#services" class="footer__link" title="Services">Dịch vụ</a></li>
+                                <li><a href="#" class="footer__link" title="About Us">Về chúng tôi</a></li>
+                                <li><a href="#contact" class="footer__link" title="Contact">Liên hệ</a></li>
                             </ul>
                         </div>
+
+                        <!-- Contact info -->
                         <div class="footer__item">
                             <h3 class="footer__title">Thông tin liên hệ</h3>
-
                             <p class="footer__info">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                                 </svg>
@@ -374,15 +324,16 @@
                             </p>
                             <p class="footer__info">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                                 </svg>
-                                <span>liberal.fp@gmail.com</span>
+                                <span><a href="mailto:hoatran@example.com"
+                                        class="footer__link">hoatran@example.com</a></span>
                             </p>
                             <p class="footer__info">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -391,12 +342,14 @@
                                 <span>113/54/29, Lâm Thị Hố, Khu Phố 51, Trung Mỹ Tây, TP. Hồ Chí Minh</span>
                             </p>
                         </div>
+
                     </div>
                 </div>
                 <div class="footer__bottom">
-                    <p>2026 Liberal Fashion & Packaging. All right reserved.</p>
+                    <p>&copy; 2025 HoaTran. All rights reserved.</p>
                 </div>
             </footer>
+
         </div>
     </div>
 </body>
