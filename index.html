@@ -5,13 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Garment Design</title>
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Sora:wght@100..800&display=swap"
         rel="stylesheet">
-    <!-- CSS -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -20,34 +18,35 @@
     <div class="container">
         <div class="wrapper">
 
-            <!-- ========== HEADER ========== -->
+            <!-- HEADER -->
             <header class="header">
                 <a href="#" class="logo" aria-label="HoaTran - Trang chủ">
                     <span class="logo__text">HoaTran</span>
                 </a>
-                <nav class="header__nav" aria-label="Menu chính">
+                <nav class="header__nav" id="mainNav" aria-label="Menu chính">
                     <ul class="header__menu">
-                        <li><a href="#" class="header__link" title="Home">Trang chủ</a></li>
-                        <li><a href="#services" class="header__link" title="Services">Dịch vụ</a></li>
-                        <li><a href="#" class="header__link" title="About Us">Về chúng tôi</a></li>
-                        <li><a href="#contact" class="header__link" title="Contact">Liên hệ</a></li>
+                        <li><a href="#" class="header__link">Trang chủ</a></li>
+                        <li><a href="#services" class="header__link">Dịch vụ</a></li>
+                        <li><a href="#" class="header__link">Về chúng tôi</a></li>
+                        <li><a href="#contact" class="header__link">Liên hệ</a></li>
                     </ul>
                 </nav>
                 <button class="header__btn">Nhận báo giá</button>
+                <button class="header__hamburger" id="hamburger" aria-label="Mở menu" aria-expanded="false"
+                    aria-controls="mainNav">
+                    <span></span><span></span><span></span>
+                </button>
             </header>
+            <div class="nav-overlay" id="navOverlay"></div>
 
             <main>
 
-                <!-- ========== HERO ========== -->
+                <!-- HERO -->
                 <section class="hero">
                     <div class="hero__content">
-                        <h1 class="hero__title">
-                            Cung cấp các giải pháp và thiết kế may mặc đáng tin cậy.
-                        </h1>
-                        <p class="hero__text">
-                            Dịch vụ thiết kế và in ấn trang phục chất lượng cao nhất - Giải pháp được ngành công nghiệp
-                            may mặc tin dùng.
-                        </p>
+                        <h1 class="hero__title">Cung cấp các giải pháp và thiết kế may mặc đáng tin cậy.</h1>
+                        <p class="hero__text">Dịch vụ thiết kế và in ấn trang phục chất lượng cao nhất - Giải pháp được
+                            ngành công nghiệp may mặc tin dùng.</p>
                         <div class="hero__btns">
                             <button class="btn hero__btn">Liên hệ ngay</button>
                             <button class="btn btn--outline hero__btn">Dịch vụ của chúng tôi</button>
@@ -63,19 +62,14 @@
                     </div>
                 </section>
 
-                <!-- ========== SERVICES ========== -->
+                <!-- SERVICES -->
                 <section id="services" class="services interior">
                     <div class="interior__layout-top">
                         <h2 class="interior__layout-title text-h2">Dịch vụ của chúng tôi</h2>
-                        <p class="interior__layout-text text-p1">
-                            Chúng tôi cung cấp đầy đủ các giải pháp thiết kế trang phục để đáp ứng nhu cầu cụ thể của
-                            bạn.
-                        </p>
+                        <p class="interior__layout-text text-p1">Chúng tôi cung cấp đầy đủ các giải pháp thiết kế trang
+                            phục để đáp ứng nhu cầu cụ thể của bạn.</p>
                     </div>
-
                     <div class="services__cards">
-
-                        <!-- Card 1 -->
                         <div class="services__card">
                             <div class="icon-circle services__cardIcon">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -90,8 +84,6 @@
                                     quán.</p>
                             </div>
                         </div>
-
-                        <!-- Card 2 -->
                         <div class="services__card">
                             <div class="icon-circle services__cardIcon">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -106,8 +98,6 @@
                                     chất lượng.</p>
                             </div>
                         </div>
-
-                        <!-- Card 3 -->
                         <div class="services__card">
                             <div class="icon-circle services__cardIcon">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -122,8 +112,6 @@
                                 </p>
                             </div>
                         </div>
-
-                        <!-- Card 4 -->
                         <div class="services__card">
                             <div class="icon-circle services__cardIcon">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -137,17 +125,15 @@
                                 <p class="services__cardText">Tối ưu nguyên phụ liệu đến mức tốt nhất.</p>
                             </div>
                         </div>
-
                     </div>
                 </section>
 
-                <!-- ========== GALLERY ========== -->
+                <!-- GALLERY -->
                 <section class="gallery interior">
                     <div class="interior__layout-top">
                         <h2 class="interior__layout-title text-h2">Sản phẩm của chúng tôi</h2>
-                        <p class="interior__layout-text text-p1">
-                            Trưng bày các sản phẩm thiết kế, sơ đồ, dịch vụ in ấn của chúng tôi.
-                        </p>
+                        <p class="interior__layout-text text-p1">Trưng bày các sản phẩm thiết kế, sơ đồ, dịch vụ in ấn
+                            của chúng tôi.</p>
                     </div>
                     <div class="gallery__cards">
                         <div class="gallery__card a"><img
@@ -171,16 +157,13 @@
                     </div>
                 </section>
 
-                <!-- ========== CONTACT ========== -->
+                <!-- CONTACT -->
                 <section id="contact" class="contact interior">
                     <div class="interior__layout-top">
                         <h2 class="interior__layout-title text-h2">Liên hệ với chúng tôi</h2>
-                        <p class="interior__layout-text text-p1">
-                            Hãy cho chúng tôi biết yêu cầu của bạn. Chúng tôi sẽ liên hệ lại với bạn trong thời gian
-                            ngắn nhất.
-                        </p>
+                        <p class="interior__layout-text text-p1">Hãy cho chúng tôi biết yêu cầu của bạn. Chúng tôi sẽ
+                            liên hệ lại với bạn trong thời gian ngắn nhất.</p>
                     </div>
-
                     <div class="contact__content">
                         <div class="contact__info">
                             <div class="contact__infoTop">
@@ -188,8 +171,6 @@
                                 <p class="contact__text text-p2">Chúng tôi sẽ trả lời trong vòng 24 giờ.</p>
                             </div>
                             <div class="contact__items">
-
-                                <!-- Địa chỉ -->
                                 <div class="contact__item">
                                     <div class="icon-circle contact__icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -203,8 +184,6 @@
                                     <p class="contact__itemText text-p2">113/54/29, Lâm Thị Hố, Khu Phố 51, Trung Mỹ
                                         Tây, TP. Hồ Chí Minh</p>
                                 </div>
-
-                                <!-- Điện thoại -->
                                 <div class="contact__item">
                                     <div class="icon-circle contact__icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -215,8 +194,6 @@
                                     </div>
                                     <p class="contact__itemText text-p2">+84 0918414470</p>
                                 </div>
-
-                                <!-- Email -->
                                 <div class="contact__item">
                                     <div class="icon-circle contact__icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -229,11 +206,8 @@
                                         <a href="mailto:hoatran@example.com">hoatran@example.com</a>
                                     </p>
                                 </div>
-
                             </div>
                         </div>
-
-                        <!-- Form -->
                         <div class="contact__form">
                             <form class="form" novalidate>
                                 <div class="form__group">
@@ -278,12 +252,10 @@
 
             </main>
 
-            <!-- ========== FOOTER ========== -->
+            <!-- FOOTER -->
             <footer class="footer">
                 <div class="footer__top">
                     <div class="footer__items">
-
-                        <!-- Brand -->
                         <div class="footer__item">
                             <a href="#" class="logo" aria-label="HoaTran - Trang chủ">
                                 <span class="logo__text">HoaTran</span>
@@ -299,19 +271,15 @@
                                 </a>
                             </div>
                         </div>
-
-                        <!-- Quick links -->
                         <div class="footer__item">
                             <h3 class="footer__title">Liên kết nhanh</h3>
                             <ul class="footer__menu">
-                                <li><a href="#" class="footer__link" title="Home">Trang chủ</a></li>
-                                <li><a href="#services" class="footer__link" title="Services">Dịch vụ</a></li>
-                                <li><a href="#" class="footer__link" title="About Us">Về chúng tôi</a></li>
-                                <li><a href="#contact" class="footer__link" title="Contact">Liên hệ</a></li>
+                                <li><a href="#" class="footer__link">Trang chủ</a></li>
+                                <li><a href="#services" class="footer__link">Dịch vụ</a></li>
+                                <li><a href="#" class="footer__link">Về chúng tôi</a></li>
+                                <li><a href="#contact" class="footer__link">Liên hệ</a></li>
                             </ul>
                         </div>
-
-                        <!-- Contact info -->
                         <div class="footer__item">
                             <h3 class="footer__title">Thông tin liên hệ</h3>
                             <p class="footer__info">
@@ -342,7 +310,6 @@
                                 <span>113/54/29, Lâm Thị Hố, Khu Phố 51, Trung Mỹ Tây, TP. Hồ Chí Minh</span>
                             </p>
                         </div>
-
                     </div>
                 </div>
                 <div class="footer__bottom">
@@ -352,6 +319,10 @@
 
         </div>
     </div>
+
+    <!-- Hamburger JS -->
+    <script src="./js/menu.js"></script>
+
 </body>
 
 </html>
